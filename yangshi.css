@@ -1,0 +1,166 @@
+body {
+    max-width: 750px;
+    margin: 0 auto;
+}
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+* {
+    text-decoration: none;
+}
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.out {
+    width: 10rem;
+}
+.caidan {
+    display: flex;
+    justify-content: space-between;
+}
+.caidan li {
+    opacity: 1;
+    transition: all 1s;
+}
+.caidan li img {
+    width: 2rem;
+}
+.butouming {
+    opacity: .5 !important;
+}
+.neirong {
+    position: relative;
+}
+.neirong .fenlei {
+    width: 10rem;
+    position: absolute;
+}
+.neirong .fenlei:not(:nth-child(1)) {
+    display: none;
+}
+.fenlei .chanpin {
+    position: relative;
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+.fenlei img {
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: .5rem;
+    width: 4rem;
+    height: 4rem;
+}
+.fenlei .mingcheng {
+    width: 4rem;
+    font-size: .7rem;
+    position: absolute;
+    top: .5rem;
+    left: 4.5rem;
+}
+.fenlei .jiage {
+    width: 1.4rem;
+    font-size: .7rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 4.5rem;
+}
+.fenlei .shuliang {
+    font-size: .6rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+}
+.fenlei .shuliang a {
+    display: inline-block;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    height: .6rem;
+    width: .6rem;
+    line-height: .6rem;
+}
+.xiaoshi {
+    display: none !important;
+}
+.geshu {
+    display: none;
+}
+.weibu {
+    z-index: 555;
+    width: 8rem;
+    height: 2rem;
+    background-color: aquamarine;
+    position: fixed;
+    bottom: .2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+}
+.weibu .zhangdan {
+    font-size: .6rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: blanchedalmond;
+}
+.weibu .qian {
+    font-size: .6rem;
+    width: 4rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+.weibu .fukuan {
+    font-size: .6rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: blanchedalmond;
+}
+.hei {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+    display: none;
+}
+.bai {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    padding-bottom: 2.5rem;
+    background-color: aliceblue;
+    z-index: 3;
+    display: none;
+}
+.bai>div {
+    width: 10rem;
+    font-size: .6rem;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.bai div span:first-child,
+.bai div span:last-child {
+    width: 5rem;
+    text-align: center;
+}
+.bai div div {
+    width: 2rem;
+}
+.bai .yangshi div {
+    width: 5rem;
+    text-align: center;
+}
